@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+
+     
+    </head>
+    <body>
+
+        
+
+
+        <div class="container my-5 ">
+            <label> ProductName:</label>
+            <input type="text" id="productNameInp" class="form-control  my-2">
+
+            <label> ProductPrice:</label>
+            <input type="text" id="productPriceInp" class="form-control my-2">
+
+            <label> ProductCategory:</label>
+            <input type="text" id="productCategoryInp" class="form-control my-2">
+
+            <label> ProductDesc:</label>
+            <input type="text" id="productDescInp" class="form-control my-2">
+
+            <button id="addBtn" class="btn btn-info my-2">add</button>
+        </div>
+
+
+        <div class="m-auto w-50 py-5">
+            <input onkeyup="searchItem(this.value)" placeholder="Enter Search Name...">
+            <div id="searchResult" class="m-auto py-1 w-100"></div>
+        </div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <th>Index</th>
+                    <th>ProductName</th>
+                    <th>ProductPrice</th>
+                    <th>ProductCategory</th>
+                    <th>ProductDesc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/first.js"></script>
+    </body>
+</html>
